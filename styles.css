@@ -96,3 +96,230 @@ body{
     text-decoration: underline;
     text-align: center;
 }
+
+/* -------- */
+/* TEXT BOX */
+/* -------- */
+.toggle
+{
+    display: none;
+}
+/* eco-box */
+.lbl-toggle-e 
+{
+	display: block;
+  	text-align: left;
+	padding: 1px;
+	width: 70%;
+	margin:10px auto;
+	color: rgb(62, 62, 68);
+	background: rgb(118, 215, 210);
+	border-radius: 2px;
+	border: 2px solid rgb(118, 215, 210);
+	transition: all 0.2s ease-out;
+} 
+.lbl-toggle-e:hover 
+{
+	color: white;
+	background: rgb(62, 62, 68);
+    border: 2px solid white;
+}
+.lbl-toggle-e::before 
+{
+	content: ' ';
+	display: inline-block;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid currentColor;
+	vertical-align: middle;
+	margin-right: .7rem;
+	transform: translateY(-2px);
+	transition: transform .2s ease-out;
+}
+.toggle:checked + .lbl-toggle-e::before 
+{
+	transform: rotate(90deg) translateX(-3px);
+}
+.collapsible-content 
+{
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height .25s ease-in-out;
+	max-width: 80%;
+	margin-left: 10%;
+}
+.toggle:checked + .lbl-toggle-e + .collapsible-content 
+{
+	max-height: 100vh;
+} 
+.toggle:checked + .lbl-toggle-e 
+{
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.content-inner
+{
+	margin-left: 10%;
+}
+/* math-box */
+.lbl-toggle-m 
+{
+	display: block;
+  	text-align: left;
+	padding: 1px;
+	width: 70%;
+	margin:10px auto;
+	color: rgb(62, 62, 68);
+	background: rgb(118, 215, 171);
+	border-radius: 2px;
+	border: 2px solid rgb(118, 215, 171);
+	transition: all 0.2s ease-out;
+} 
+.lbl-toggle-m:hover 
+{
+	color: white;
+	background: rgb(62, 62, 68);
+    border: 2px solid white;
+}
+.lbl-toggle-m::before 
+{
+	content: ' ';
+	display: inline-block;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid currentColor;
+	vertical-align: middle;
+	margin-right: .7rem;
+	transform: translateY(-2px);
+	transition: transform .2s ease-out;
+}
+.toggle:checked + .lbl-toggle-m::before 
+{
+	transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked + .lbl-toggle-m + .collapsible-content 
+{
+	max-height: 100vh;
+} 
+.toggle:checked + .lbl-toggle-m 
+{
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+/* trans-box */
+.lbl-toggle-t 
+{
+	display: block;
+  	text-align: left;
+	padding: 1px;
+	width: 70%;
+	margin:10px auto;
+	color: rgb(62, 62, 68);
+	background: rgb(215, 145, 118);
+	border-radius: 2px;
+	border: 2px solid rgb(215, 145, 118);
+	transition: all 0.2s ease-out;
+} 
+.lbl-toggle-t:hover 
+{
+	color: white;
+	background: rgb(62, 62, 68);
+    border: 2px solid white;
+}
+.lbl-toggle-t::before 
+{
+	content: ' ';
+	display: inline-block;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid currentColor;
+	vertical-align: middle;
+	margin-right: .7rem;
+	transform: translateY(-2px);
+	transition: transform .2s ease-out;
+}
+.toggle:checked + .lbl-toggle-t::before 
+{
+	transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked + .lbl-toggle-t + .collapsible-content 
+{
+	max-height: 100vh;
+} 
+.toggle:checked + .lbl-toggle-t 
+{
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+/* other-box */
+.lbl-toggle-o 
+{
+	display: block;
+  	text-align: left;
+	padding: 1px;
+	width: 70%;
+	margin:10px auto;
+	color: rgb(62, 62, 68);
+	background: rgb(215, 209, 118);
+	border-radius: 2px;
+	border: 2px solid rgb(215, 209, 118);
+	transition: all 0.2s ease-out;
+} 
+.lbl-toggle-o:hover 
+{
+	color: white;
+	background: rgb(62, 62, 68);
+    border: 2px solid white;
+}
+.lbl-toggle-o::before 
+{
+	content: ' ';
+	display: inline-block;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid currentColor;
+	vertical-align: middle;
+	margin-right: .7rem;
+	transform: translateY(-2px);
+	transition: transform .2s ease-out;
+}
+.toggle:checked + .lbl-toggle-o::before 
+{
+	transform: rotate(90deg) translateX(-3px);
+}
+.toggle:checked + .lbl-toggle-o + .collapsible-content 
+{
+	max-height: 100vh;
+} 
+.toggle:checked + .lbl-toggle-o 
+{
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* ------ */
+/* TITLES */
+/* ------ */
+.titles-gen
+{
+    display: inline-block;
+    margin-left: 10%;
+}
+.titles-list
+{
+    margin-left: 12%;
+}
+.titles-sem
+{
+    display: inline-block;
+    margin-left: 15%;
+}
+.data-link 
+{
+	color: white;
+}
+
+.colorb
+{
+    color: rgb(62, 62, 68);
+}
